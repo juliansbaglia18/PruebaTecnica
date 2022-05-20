@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minumum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilosJulián.css">
+    <title>Sbaglia Julián</title>
+</head>
+<body class="bg-secondary">
+    <div class="d-flex" id="wrapper">
+        
+<!-- PRESENTACIÓN -->
+        <div class="border-end border-info bg-dark" id="sidebar-wrapper">
+            <div class="sidebar-heading sticky-top text-center">
+                <strong class="text-info">PRESENTACIÓN</strong>
+            </div>
+            <div class="list-group list-group-flush">
+                <p class="list-group-item list-group-item-info texto-presentacion  border border-info">
+                    Estimado responsable de Recursos Humanos:<br>
+                    Le hago llegar esta presentación junto al proyecto propuesto con motivo de que me tenga en cuenta para el puesto vacante en su equipo.<br>
+                    Espero logren hallarme como un candidato ideal para dicho puesto.<br>
+                    Soy técnico en electrónica y actualmente estudio la carrera de Técnico Superior en Programación en la UTN.
+                    Tengo conocimientos en bases de datos, aplicaciones de Cloud y varios lenguajes de programación (entre los cuales incluyen programación web),
+                    sumado a mis habilidades en electrónica.<br>
+                    Mi objetivo es poder aplicar mis conocimientos y, a la vez, incorporar nuevas experiencias que sumen a mi desarrollo profesional.<br>
+                    <figcaption class="blockquote-footer">
+                        Atentamente,<br>
+                        <cite title="Source Title">
+                            &nbsp Julián Agustín Sbaglia
+                        </cite>
+                    </figcaption> <br>
+                    <a class="text-info text-center" href="JULIÁN SBAGLIA CV.pdf" download="Julián Curriculum Vitae">Click para descargar CV</a>
+                </p>
+            </div>
+<!--FIN PRESENTACIÓN -->
+        </div>
+        
+        <div id="page-content-wrapper">
+
+<!-- BARRA SUPERIOR -->
+            <nav class="navbar navbar-text navbar-dark bg-dark sticky-top">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <a class="navbar-brand" href="#">
+                                <button class="btn btn-sm btn-outline-info" type="button" id="sidebarToggle">
+                                    <img src="images/Julian-foto-CV.jpg" width="30" height="30" class="d-inline-block rounded-circle" alt="">
+                                    <strong>Sbaglia Julián</strong>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="col-xl-8 text-light">
+                            <div class="h3 text-center">
+                                Prueba Técnica Ingertec
+                            </div>
+                        </div>                        
+                    </div>
+                </div>    
+            </nav>
+<!-- FIN BARRA SUPERIOR -->
+        <br>
+        <div class="container-fluid">
+<!-- TARJETAS -->
+            <div class="row justify-content-xl-around">
+                <div class="col-xl-2 card border-info bg-dark">
+                    <div class="card-header border-info">
+                        <a href="#!">
+                            <img src="images/torreEiffel.jpg" onclick="abrirVentanaUno()" class="card-img-top rounded border border-light" data-bs-toggle="modal" data-bs-target="#modalImagen" alt="">
+                        </a>
+                    </div>
+                    <div class="card-body text-light">
+                        <h5 class="card-title text-center text-info">Torre Eiffel</h5>
+                        <p>
+                            La Torre Eiffel (Tour Eiffel, en francés), inicialmente llamada Tour de 300 mètres 
+                            (Torre de 300 metros) es una estructura de 
+                            hierro pudelado diseñada inicialmente por los ingenieros 
+                            civiles Maurice Koechlin y Émile Nouguier y construida, tr
+                            as el rediseño estético de Stephen Sauvestre, por el ingeniero civil
+                            francés Alexandre Gustave Eiffel y sus colaboradores para la Exposición Universal de 1889 en París.​
+                            <a href="https://es.wikipedia.org/wiki/Torre_Eiffel" class="link-info">
+                                wikipedia.org/wiki/Torre_Eiffel
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-footer text-center text-light border-info">
+                        <h6>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                            </svg>
+                            Contador de visitas: 
+                            <b id="contImgUno">0</b>
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 card border-info bg-dark">
+                    <div class="card-header border-info">
+                        <a href="#">
+                            <img src="images/TajMahal.jpg" onclick="contarImgDos()" class="card-img-top rounded border border-white" data-bs-toggle="modal" data-bs-target="#modalImagen2" alt="">
+                        </a>
+                    </div>
+                    <div class="card-body text-light">
+                        <h5 class="card-title text-center text-info">Taj Mahal</h5>
+                        <p>
+                            El Taj Mahal 
+                            ​es un monumento funerario construido entre 1631 y 1654 en la ciudad de Agra, estado de Uttar Pradesh (India), 
+                            a orillas del río Yamuna, por el emperador musulmán Shah Jahan de la dinastía mogol. El imponente conjunto de
+                            edificios se erigió en honor de su esposa favorita, Arjumand Banu Begum —más conocida como Mumtaz Mahal— que murió 
+                            en el parto de su decimocuarto hijo. Se estima que en su construcción trabajaron unos 20 000 obreros bajo 
+                            dirección de un conjunto de arquitectos liderados por el arquitecto de la corte, Ustad Ahmad Lahori.
+                            <a href="https://es.wikipedia.org/wiki/Taj_Mahal" class="link-info">
+                                <br> wikipedia.org/wiki/Taj_Mahal
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-footer text-center text-light border-info">
+                        <h6>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                            </svg>
+                            Contador de visitas: 
+                            <b id="contImgDos">0</b>
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 card border-info bg-dark">
+                    <div class="card-header border-info">
+                        <a href="#!" onclick="abrirVentanaTres()">
+                            <img src="images/murallaChina.jpg" class="card-img-top rounded border border-light" data-bs-toggle="modal" data-bs-target="#modalImagen" alt="">
+                        </a>
+                    </div>
+                    <div class="card-body text-light">
+                        <h5 class="card-title text-center text-info">La Gran Muralla China</h5>
+                        <p>
+                            La Gran Muralla China es una antigua fortificación china,1​ construida y 
+                            reconstruida entre el siglo v a. C. 
+                            y el siglo xvi para proteger la frontera norte del Imperio chino durante 
+                            las sucesivas dinastías imperiales de los ataques de los nómadas xiongnu de Mongolia 
+                            y Manchuria. Contando sus ramificaciones y construcciones secundarias, se calcula que tiene unos 21 200 km de 
+                            longitud,2​ desde la frontera con Corea, al borde del río Yalu, hasta el desierto de Gobi, a lo largo de un arco 
+                            que delinea aproximadamente el borde sur de Mongolia Interior, aunque hoy solo se conserva un 30 % de ella.
+                            <a href="https://es.wikipedia.org/wiki/Gran_Muralla_China" class="link-info">
+                                <br>wikipedia.org/wiki/Gran_Muralla_China
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-footer text-center text-light border-info">
+                        <h6>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                            </svg>
+                            Contador de visitas: 
+                            <b id="contImgTres">0</b>
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 card border-info bg-dark">
+                    <div class="card-header border-info">
+                        <a href="#!">
+                            <img src="images/machuPichu.jpg" onclick="contarImgCuatro()" class="card-img-top rounded border border-light" data-bs-toggle="modal" data-bs-target="#modalImagen4" alt="">
+                        </a>
+                    </div>
+                    <div class="card-body text-light">
+                        <h5 class="card-title text-center text-info">Machu Pichu</h5>
+                        <p class="card-text">
+                            Machu Picchu 
+                            es el nombre contemporáneo que se da a una llacta 
+                            construida antes del siglo xv, ubicada en la Cordillera Oriental del sur del Perú, 
+                            en la cadena montañosa de Los Andes a 2430 metros sobre el nivel del mar. 
+                            Está ubicada en la región Cusco (provincia de Urubamba, distrito de Machupicchu) 
+                            sobre el Valle Sagrado de los Incas, a 80 kilómetros al noroeste de la ciudad de Cusco, 
+                            ciudad del Perú y por donde fluye el río Urubamba, río que atraviesa la cordillera y origina un 
+                            cañón con clima de montaña tropical. Según muchos estudiosos su nombre original habría sido Llaqtapata.
+                            <a href="https://es.wikipedia.org/wiki/Machu_Picchu" class="link-info">
+                                <br>wikipedia.org/wiki/Machu_Picchu
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-footer text-center text-light border-info">
+                        <h6>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                            </svg>
+                            Contador de visitas: 
+                            <b id="contImgCuatro">0</b>
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 card border-info bg-dark">
+                    <div class="card-header border-info">
+                        <a href="#!">
+                            <img src="images/cataratasIguazu.jpg" onclick="abrirVentanaCinco()" class="card-img-top rounded border border-light" data-bs-toggle="modal" data-bs-target="#modalImagen5" alt="">
+                        </a>
+                    </div>
+                    <div class="card-body text-light">
+                        <h5 class="card-title text-center text-info">Cataratas del Iguazú</h5>
+                        <p class="card-text">
+                            Las cataratas del Iguazú,  
+                                son un conjunto de cataratas que se localizan sobre el río Iguazú, en el límite entre la 
+                                provincia argentina de Misiones y el estado brasileño de Paraná. Están totalmente insertadas 
+                                en áreas protegidas; el sector de la Argentina se encuentra dentro del parque nacional Iguazú, 
+                                mientras que el de Brasil se encuentra en el parque nacional do Iguaçu.
+                                <a href="https://es.wikipedia.org/wiki/Cataratas_del_Iguaz%C3%BA" class="link-info">
+                                    <br>https://es.wikipedia.org/wiki/Cataratas_del_Iguazú
+                                </a>
+                        </p>
+                    </div>
+                    <div class="card-footer text-center text-light border-info">
+                        <h6>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                            </svg>
+                            Contador de visitas: 
+                            <b id="contImgCinco">0</b>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+<!-- TARJETAS -->
+            <br>
+<!-- TRAER DATOS CON AJAX -->
+            <div class="container">
+                <div class="row justify-content-center">
+                    
+                    <div class="form-group col-xl-4">
+                        <textarea class="form-control border border-info" id="textarea" rows="3"></textarea>
+                    </div>
+                    <button type="button" class="col-xl-1 btn btn-info border-dark" id="btnAjax">Traer datos</button>
+                </div>
+            </div>
+<!-- FIN TRAER DATOS CON AJAX -->
+            <br>
+        </div>
+    </div>
+<!-- IMAGEN 1 EXPANDIDA -->
+    <div class="modal fade" id="modalImagen2" tabindex="-1" aria-hidden="true" aria-labelledby="modalTittle">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="h4">Taj Mahal</p>
+                    <button type="button" class="btn-close btn-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-center align-items-center">
+                    <img src="images/TajMahal.jpg" class="img-fluid d-block m-l-none" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- FIN IMAGEN 1 EXPANDIDA -->s
+    
+<!-- IMAGEN 2 EXPANDIDA -->
+    <div class="modal fade" id="modalImagen4" tabindex="-1" aria-hidden="true" aria-labelledby="modalTittle">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="h5">Machu Pichu</p>
+                    <button type="button" class="btn-close btn-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-center align-items-center">
+                    <img src="images/machuPichu.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- FIN IMAGEN 2 EXPANDIDA -->
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
